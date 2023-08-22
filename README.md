@@ -2,7 +2,8 @@
 Working representation of a 3x3 rubiks cube using c++ console graphics. 
 
 
-Instructions in english:
+Instructions in english
+
 W - Turn top layer
 
 A - Turn left layer
