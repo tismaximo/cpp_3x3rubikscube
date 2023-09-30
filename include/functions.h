@@ -59,7 +59,7 @@ namespace instructions {
         std::cout << (char)toupper(LANG) << " // CHANGE LANGUAGE";
         rlutil::locate(50, 19);
         std::cout << (char)toupper(EXIT) << " // EXIT";
-        rlutil::locate(1, 24);
+        rlutil::locate(1, 25);
         std::cout << "// USE CAPS LOCK TO DO COUNTERCLOCKWISE MOVEMENTS";
     }
 
