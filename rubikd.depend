@@ -44,10 +44,10 @@
 	"..\include\rubik.h"
 	"..\include\rlutil.h"
 
-1696109520 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\rubik.h
+1696166361 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\rubik.h
 	"consts.h"
 
-1696165710 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\consts.h
+1696166361 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\consts.h
 
 1696072063 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\rlutil.h
 	<iostream>

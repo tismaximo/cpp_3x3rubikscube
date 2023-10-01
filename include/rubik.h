@@ -6,6 +6,7 @@ class Rubik {
 
 private:
     std::string** state;
+    // temporary states to move the pieces around
     std::string tempSide1[consts::dimensions], tempSide2[consts::dimensions];
     char temp1, temp2, temp3, temp4, temp5, temp6, temp7, temp8, temp9;
 public:
