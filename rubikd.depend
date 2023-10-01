@@ -44,10 +44,10 @@
 	"..\include\rubik.h"
 	"..\include\rlutil.h"
 
-1696087580 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\rubik.h
+1696109520 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\rubik.h
 	"consts.h"
 
-1696088134 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\consts.h
+1696165710 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\consts.h
 
 1696072063 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\rlutil.h
 	<iostream>
@@ -63,17 +63,19 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1696090158 source:c:\users\maximo\documents\github\cpp_3x3rubikscube\src\main.cpp
+1696164395 source:c:\users\maximo\documents\github\cpp_3x3rubikscube\src\main.cpp
 	<iostream>
 	"..\include\rlutil.h"
-	"..\include\controls.h"
+	"..\include\enums.h"
 	"..\include\consts.h"
 	"..\include\functions.h"
 	"..\include\rubik.h"
 
 1696090178 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\controls.h
 
-1696090515 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\functions.h
+1696164960 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\functions.h
 	"consts.h"
-	"controls.h"
+	"enums.h"
+
+1696164935 c:\users\maximo\documents\github\cpp_3x3rubikscube\include\enums.h
 

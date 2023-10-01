@@ -91,7 +91,7 @@ void Rubik::Draw() {
                     break;
                 }
                 rlutil::locate(x + k + k*2, y + j + j); // increases the X position for every K loop, increases Y for every J loop
-                std::cout << state[i][j][k]; // draws a dimension * dimension square
+                std::cout << state[i][j][k]; // draws an individual square
             }
         }
         //repeat for the remaining sides
@@ -128,6 +128,7 @@ void Rubik::Scramble() {
 }
 
 // turns (this code sucks i will try to come up with a way to make it more flexible later)
+// each of these functions moves each individual square that needs to be moved one by one and in no particular order
 
 void Rubik::turnB() {
 	for (int i = 0; i < consts::dimensions; i++) {
@@ -338,6 +339,9 @@ void Rubik::turnU() {
 	state[0][0][1] = temp8;
 	state[0][0][2] = temp9;
 }
+
+// perspective changes
+// does the exact same thing as turns
 
 void Rubik::turnX() {
 	for (int i = 0; i < consts::dimensions; i++) {

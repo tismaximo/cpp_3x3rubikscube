@@ -1,106 +1,105 @@
 #include<iostream>
 #include "..\include\rlutil.h"
-#include "..\include\controls.h"
+#include "..\include\enums.h"
 #include "..\include\consts.h"
 #include "..\include\functions.h"
 #include "..\include\rubik.h"
 
 void checkMove(char input);
-int checkOption(char input);
 Rubik cube;
 
 int main(){
 	rlutil::hidecursor();
-	instructions::showEnglish();
 	char input;
+	char lang = enums::languages::EN;
+	text::showInstructions(lang);
 	while (true) {
         cube.Draw();
         input = getch();
-        checkMove(input);
-        if (checkOption(input) == 0) return 0;
-    }
-}
-
-int checkOption(char input) {
-    switch (tolower(input)) {
-        case SCRAMBLE:
+        rlutil::locate(30, 5);
+        if (input == toupper(input)) text::showCapsLockLabel(lang);
+        else std::cout << consts::clearLine;
+        switch (tolower(input)) {
+        case enums::controls::SCRAMBLE:
             cube.Scramble();
             break;
-        case SOLVE:
+        case enums::controls::SOLVE:
             cube.setState(consts::solved);
             break;
-        case LANG:
-            instructions::handleLangChange();
+        case enums::controls::LANG:
+            lang = text::langChange();
             break;
-        case EXIT:
+        case enums::controls::EXIT:
             return 0;
+        }
+        checkMove(input);
+
     }
-    return 1;
 }
 
 void checkMove(char input) {
     int i = 0;
     switch(input) {
-        case L:
+        case enums::controls::L:
             cube.turnL();
             break;
-		case R:
+		case enums::controls::R:
             cube.turnR();
             break;
-        case U:
+        case enums::controls::U:
             cube.turnU();
             break;
-        case D:
+        case enums::controls::D:
             cube.turnD();
             break;
-        case F:
+        case enums::controls::F:
             cube.turnF();
             break;
-        case B:
+        case enums::controls::B:
             cube.turnB();
             break;
-        case X:
+        case enums::controls::X:
             cube.turnX();
             break;
-        case Y:
+        case enums::controls::Y:
             cube.turnY();
             break;
-        case U_PRIME:
+        case enums::controls::U_PRIME:
             for (i = 0; i < 3; i++) {
                 cube.turnU();
             }
             break;
-        case L_PRIME:
+        case enums::controls::L_PRIME:
             for (i = 0; i < 3; i++) {
                 cube.turnL();
             }
             break;
-        case R_PRIME:
+        case enums::controls::R_PRIME:
             for (i = 0; i < 3; i++) {
                 cube.turnR();
             }
             break;
-        case D_PRIME:
+        case enums::controls::D_PRIME:
             for (i = 0; i < 3; i++) {
                 cube.turnD();
             }
             break;
-        case F_PRIME:
+        case enums::controls::F_PRIME:
             for (i = 0; i < 3; i++) {
                 cube.turnF();
             }
             break;
-        case B_PRIME:
+        case enums::controls::B_PRIME:
             for (i = 0; i < 3; i++) {
                 cube.turnB();
             }
             break;
-        case X_PRIME:
+        case enums::controls::X_PRIME:
             for (i = 0; i < 3; i++) {
                 cube.turnX();
             }
             break;
-        case Y_PRIME:
+        case enums::controls::Y_PRIME:
             for (i = 0; i < 3; i++) {
                 cube.turnY();
             }

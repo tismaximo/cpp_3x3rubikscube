@@ -33,7 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/consts.h" />
-		<Unit filename="include/controls.h" />
+		<Unit filename="include/enums.h" />
 		<Unit filename="include/functions.h" />
 		<Unit filename="include/rlutil.h" />
 		<Unit filename="include/rubik.h" />

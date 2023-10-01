@@ -3,6 +3,7 @@
 #define RUBIK_H_INCLUDED
 
 class Rubik {
+
 private:
     std::string** state;
     std::string tempSide1[consts::dimensions], tempSide2[consts::dimensions];
@@ -13,16 +14,19 @@ public:
     ~Rubik();
     void setState(const std::string state[6][consts::dimensions]);
     std::string** getState();
+    void Draw();
+    void Scramble();
+    //turns
     void turnU();
     void turnL();
     void turnR();
     void turnD();
     void turnF();
     void turnB();
+    //perspective change
     void turnX();
     void turnY();
-    void Draw();
-    void Scramble();
+
 };
 
 #endif // RUBIK_H_INCLUDED
